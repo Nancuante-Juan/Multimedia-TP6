@@ -8,8 +8,8 @@
     src: url(../fonts/Inter.ttf) format('truetype');
 }
 
-/* Variable como en Python, para no 
-andar repitiendo colores a cada rato*/
+/* Variable como en Python, para poder cambiar 
+todos los valores de la página desde un solo lugar*/
 :root { 
     --c_fondo: #282c2c;
     --c_texto: #dcf5f5;
