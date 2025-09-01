@@ -1,0 +1,120 @@
+/* Tipografías */
+@font-face {
+    font-family: "CalSans";
+    src: url(../fonts/CalSans.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter.ttf) format('truetype');
+}
+
+/* Variable como en Python, para no 
+andar repitiendo colores a cada rato*/
+:root { 
+    --c_fondo: #282c2c;
+    --c_texto: #dcf5f5;
+    --c_contenido: #404E4E;
+    --c_principal: #28e5d5;
+    --c_secundario: #1F4748;
+    --fuente: 'Inter', Arial;
+    --f_titulo: 'CalSans', Tahoma;
+    --sombra: 0px 0px 20px var(--c_contenido);
+    --s_principal: 0px 0px 20px #28e5d561;
+    --margen: 16px;
+    --tamaño: var(--margen);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: var(--c_fondo);
+    color: var(--c_texto);
+    accent-color: var(--c_principal);
+    font-family: var(--fuente);
+    font-size: var(--tamaño);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    gap: var(--margen);
+    margin-bottom: var(--margen);
+}
+
+h1{
+    font-family: var(--f_titulo);
+    font-size: 180px;
+    line-height: 132px;
+    margin: 0;
+}
+h3{margin-top: 0;}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margen);
+    box-shadow: var(--sombra);
+    background-color: var(--c_contenido);
+    padding: var(--margen);
+    border-radius: calc(var(--margen)*2);
+}
+
+.obj, select, input, textarea{
+    background-color: var(--c_fondo);
+    color: var(--c_texto);
+    border: 0;
+    font-family: var(--fuente);
+    font-size: var(--tamaño);
+
+    border-radius: var(--margen);
+    padding-top: calc(var(--margen)/2);
+    padding-bottom: calc(var(--margen)/2);
+    padding-left: var(--margen);
+    padding-right: var(--margen);
+    resize: vertical;
+}
+
+input[type=radio]{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+.rad_cont>label{
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+.rad_cont{
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+.boton{
+    text-decoration: none;
+    color: var(--c_texto);
+    background-color: var(--c_secundario);
+    transition-duration: 100ms;
+}
+
+.principal{
+    background-color: var(--c_principal);
+    color: var(--c_fondo);
+}
+
+.boton:hover{
+    transform: scale(1.1) rotate(4deg);
+    box-shadow: var(--s_principal);
+}
+
+label{
+    padding-left: var(--margen);
+    padding-right: var(--margen);
+}
