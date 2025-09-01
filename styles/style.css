@@ -12,14 +12,17 @@
 todos los valores de la página desde un solo lugar*/
 :root { 
     --c_fondo: #282c2c;
+    --c_hover: #2f3434;
+    --c_click: #363c3c;
     --c_texto: #dcf5f5;
     --c_contenido: #404E4E;
     --c_principal: #28e5d5;
     --c_secundario: #1F4748;
     --fuente: 'Inter', Arial;
     --f_titulo: 'CalSans', Tahoma;
-    --sombra: 0px 0px 20px var(--c_contenido);
-    --s_principal: 0px 0px 20px #28e5d561;
+    --sombra: 0px 0px var(--margen) var(--c_contenido);
+    --s_principal: 0px 0px 10px #28e5d561;
+    --s_p_click: 0px 0px 10px #28e5d5da;
     --margen: 16px;
     --tamaño: var(--margen);
 }
@@ -75,23 +78,39 @@ h3{margin-top: 0;}
     padding-left: var(--margen);
     padding-right: var(--margen);
     resize: vertical;
+    transition-duration: 100ms;
 }
 
-input[type=radio]{
+input[type=radio], input[type=checkbox]{
     padding: 0;
     margin: 0;
     width: 20px;
     height: 20px;
+    margin-left: calc(var(--margen)/2);
 }
 .rad_cont>label{
     display: flex;
     width: 100%;
-    padding: 0;
+    padding: calc(var(--margen)/2);
+}
+.rad_padre{
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(var(--margen)/-2);
 }
 .rad_cont{
     align-items: center;
     display: flex;
     width: 100%;
+    transition-duration: 100ms;
+    border-radius: var(--margen);
+}
+
+.rad_cont:hover, select:hover, input:hover, textarea:hover{
+    background-color: var(--c_hover);
+}
+.rad_cont:active, select:active, input:active, textarea:active{
+    background-color: var(--c_click);
 }
 
 
@@ -112,6 +131,10 @@ input[type=radio]{
 .boton:hover{
     transform: scale(1.1) rotate(4deg);
     box-shadow: var(--s_principal);
+}
+.boton:active{
+    transform: scale(1.1) rotate(4deg);
+    box-shadow: var(--s_p_click);
 }
 
 label{
