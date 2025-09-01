@@ -129,11 +129,11 @@ input[type=radio], input[type=checkbox]{
 }
 
 .boton:hover{
-    transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(2deg);
     box-shadow: var(--s_principal);
 }
 .boton:active{
-    transform: scale(1.1) rotate(4deg);
+    transform: scale(1) rotate(4deg);
     box-shadow: var(--s_p_click);
 }
 
