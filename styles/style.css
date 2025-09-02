@@ -108,9 +108,11 @@ input[type=radio], input[type=checkbox]{
 
 .rad_cont:hover, select:hover, input:hover, textarea:hover{
     background-color: var(--c_hover);
+    transform: scale(1.006);
 }
 .rad_cont:active, select:active, input:active, textarea:active{
     background-color: var(--c_click);
+    transform: scale(0.994);
 }
 
 
@@ -120,7 +122,8 @@ input[type=radio], input[type=checkbox]{
     text-decoration: none;
     color: var(--c_texto);
     background-color: var(--c_secundario);
-    transition-duration: 100ms;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0,1,0,1);
 }
 
 .principal{
@@ -129,11 +132,11 @@ input[type=radio], input[type=checkbox]{
 }
 
 .boton:hover{
-    transform: scale(1.1) rotate(2deg);
+    transform: scale(1.02);
     box-shadow: var(--s_principal);
 }
 .boton:active{
-    transform: scale(1) rotate(4deg);
+    transform: scale(0.98);
     box-shadow: var(--s_p_click);
 }
 
