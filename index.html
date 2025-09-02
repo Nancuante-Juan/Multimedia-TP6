@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,78 +11,125 @@
         <h1>Examen sobre el diseño web</h1>
         <h2>Sección 1</h2>
     
+        <!-- Pregunta 1 -->
         <div class="contenido">
-            <label for="name">Ingrese su nombre</label>
-            <input placeholder="Tu nombre" id="name" type="text">
-            <label for="email">Ingrese su correo</label>
-            <input placeholder="Ingrese su correo" type="email" >
-            <label for="cumple">Ingrese su cumple:</label>
-            <input type="date" id="cumple" placeholder="Tu cumple">
+            <label for="name">Ingrese su nombre *</label>
+            <input placeholder="Tu nombre" id="name" type="text" required>
         </div>
 
+        <!-- Pregunta 2 -->
         <div class="contenido">
-            <label for="name">Pregunta 2</label>
-            <select name="country" id="tarven2">
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
+            <label for="estructura">¿Cómo se crea la estructura básica de un documento HTML?</label>
+            <textarea id="estructura" name="estructura" placeholder="Escribe tu respuesta..." rows="4" required></textarea>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="contenido">
+            <label>¿Qué hace la etiqueta &lt;h1&gt;? *</label>
+            <div class="rad_padre">
+                <div class="rad_cont">
+                    <input type="radio" id="h1_1" name="h1" value="titulo" required>
+                    <label for="h1_1">Crea un título principal</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="h1_2" name="h1" value="imagen">
+                    <label for="h1_2">Inserta una imagen</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="h1_3" name="h1" value="tabla">
+                    <label for="h1_3">Crea una tabla</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="contenido">
+            <label for="atajoNuevo">¿Cuál es el atajo de teclado para crear un documento nuevo? *</label>
+            <select id="atajoNuevo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="ctrlN">Ctrl + N</option>
+                <option value="ctrlS">Ctrl + S</option>
+                <option value="ctrlC">Ctrl + C</option>
+                <option value="ctrlX">Ctrl + X</option>
             </select>
         </div>
-          
 
+        <!-- Pregunta 5 -->
         <div class="contenido">
-                <label for="age">Ingrese su edad</label>
+            <label for="atajoGuardar">¿Cuál es el atajo de teclado para guardar los cambios? *</label>
+            <select id="atajoGuardar" required>
+                <option value="">Seleccione una opción</option>
+                <option value="ctrlS">Ctrl + S</option>
+                <option value="ctrlN">Ctrl + N</option>
+                <option value="ctrlC">Ctrl + C</option>
+                <option value="ctrlX">Ctrl + X</option>
+            </select>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="contenido">
+            <label for="vscode">¿Qué es Visual Studio Code? *</label>
+            <textarea id="vscode" placeholder="Escribe tu respuesta..." rows="3" required></textarea>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="contenido">
+            <label>¿Cuál de estas etiquetas es la más adecuada para resaltar texto? *</label>
             <div class="rad_padre">
                 <div class="rad_cont">
-                    <input type="radio" id="age1" name="age" value="30">
-                    <label for="age1">0 - 30</label>
+                    <input type="radio" id="tag1" name="tag" value="s" required>
+                    <label for="tag1">&lt;s&gt;</label>
                 </div>
                 <div class="rad_cont">
-                    <input type="radio" id="age2" name="age" value="60">
-                    <label for="age2">31 - 60</label>  
+                    <input type="radio" id="tag2" name="tag" value="mark">
+                    <label for="tag2">&lt;mark&gt;</label>
                 </div>
                 <div class="rad_cont">
-                    <input type="radio" id="age3" name="age" value="100">
-                    <label for="age3">61 - 100</label>
+                    <input type="radio" id="tag3" name="tag" value="h1">
+                    <label for="tag3">&lt;h1&gt;</label>
                 </div>
             </div>
         </div>
 
+        <!-- Pregunta 8 -->
         <div class="contenido">
-            <label for="age">Ingrese su edad</label>
-            <div class="rad_padre">
-                <div class="rad_cont">
-                    <input type="checkbox" id="age4" name="age" value="30">
-                    <label for="age4">0 - 30</label>
-                </div>
-                <div class="rad_cont">
-                    <input type="checkbox" id="age5" name="age" value="60">
-                    <label for="age5">31 - 60</label>  
-                </div>
-                <div class="rad_cont">
-                    <input type="checkbox" id="age6" name="age" value="100">
-                    <label for="age6">61 - 100</label>
-                </div>
-            </div>
+            <label for="img">¿Qué atributo de la etiqueta &lt;img&gt; define la ruta de la imagen?</label>
+            <select id="img" required>
+                <option value="">Seleccione una opción</option>
+                <option value="src">src</option>
+                <option value="alt">alt</option>
+                <option value="href">href</option>
+            </select>
         </div>
 
+        <!-- Pregunta 9 -->
         <div class="contenido">
-            
-            <label for="opinion">Exprese sus comentarios de felicidad:</label>
-            <textarea placeholder="Ingrese su felicidad" id="opinion" name="opinion" rows="4" cols="40"></textarea>
+            <label>¿Cuál es la diferencia entre &lt;section&gt; y &lt;div&gt;?</label>
+            <textarea placeholder="Explica en pocas palabras..." rows="3" required></textarea>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="contenido">
+            <label>¿Qué atributo de la etiqueta &lt;a&gt; permite abrir un enlace en una nueva pestaña?</label>
+            <div class="rad_padre">
+                <div class="rad_cont">
+                    <input type="radio" id="a1" name="a_blank" value="href" required>
+                    <label for="a1">href</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="a2" name="a_blank" value="target">
+                    <label for="a2">target="_blank"</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="a3" name="a_blank" value="rel">
+                    <label for="a3">rel</label>
+                </div>
+            </div>
         </div>
 
         <div style="display: flex; justify-content: space-between;">
-            <a href="" class="obj boton">← Anterior</a>
-            <a href="" class="obj boton principal">Siguiente →</a> 
+            <a href="#" class="obj boton">← Anterior</a>
+            <button type="submit" class="obj boton principal">Enviar →</button> 
         </div>
 
         <p style="text-align: center;">Examen hecho por Nancuante, Medina y Calbucura de 4º I - Inf.</p> 
