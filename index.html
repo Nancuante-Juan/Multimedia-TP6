@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen</title>
+    <title>Examen sobre el diseño web</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <h1>Examen sobre el diseño web</h1>
         <h2>Sección 1</h2>
         <i>Las preguntas que poseen * son obligatorias.</i>
-    
+
         <!-- Pregunta 1 -->
         <div class="contenido">
             <label for="name">Ingrese su nombre *</label>
@@ -19,12 +19,6 @@
         </div>
 
         <!-- Pregunta 2 -->
-        <div class="contenido">
-            <label for="estructura">¿Cómo se crea la estructura básica de un documento HTML? *</label>
-            <textarea id="estructura" name="estructura" placeholder="Escribe tu respuesta..." rows="4" required></textarea>
-        </div>
-
-        <!-- Pregunta 3 -->
         <div class="contenido">
             <label>¿Qué hace la etiqueta &lt;h1&gt;? *</label>
             <div class="rad_padre">
@@ -43,7 +37,7 @@
             </div>
         </div>
 
-        <!-- Pregunta 4 -->
+        <!-- Pregunta 3 -->
         <div class="contenido">
             <label for="atajoNuevo">¿Cuál es el atajo de teclado para crear un documento nuevo? *</label>
             <select id="atajoNuevo" required>
@@ -55,7 +49,7 @@
             </select>
         </div>
 
-        <!-- Pregunta 5 -->
+        <!-- Pregunta 4 -->
         <div class="contenido">
             <label for="atajoGuardar">¿Cuál es el atajo de teclado para guardar los cambios? *</label>
             <select id="atajoGuardar" required>
@@ -67,13 +61,13 @@
             </select>
         </div>
 
-        <!-- Pregunta 6 -->
+        <!-- Pregunta 5 -->
         <div class="contenido">
             <label for="vscode">¿Qué es Visual Studio Code? *</label>
             <textarea id="vscode" placeholder="Escribe tu respuesta..." rows="3" required></textarea>
         </div>
 
-        <!-- Pregunta 7 -->
+        <!-- Pregunta 6 -->
         <div class="contenido">
             <label>¿Cuál de estas etiquetas es la más adecuada para resaltar texto? *</label>
             <div class="rad_padre">
@@ -92,7 +86,7 @@
             </div>
         </div>
 
-        <!-- Pregunta 8 -->
+        <!-- Pregunta 7 -->
         <div class="contenido">
             <label for="img">¿Qué atributo de la etiqueta &lt;img&gt; define la ruta de la imagen? *</label>
             <select id="img" required>
@@ -103,13 +97,13 @@
             </select>
         </div>
 
-        <!-- Pregunta 9 -->
+        <!-- Pregunta 8 -->
         <div class="contenido">
-            <label>¿Cuál es la diferencia entre &lt;section&gt; y &lt;div&gt;? *</label>
-            <textarea placeholder="Explica en pocas palabras..." rows="3" required></textarea>
+            <label for="sccdiv">¿Cuál es la diferencia entre &lt;section&gt; y &lt;div&gt;? *</label>
+            <textarea placeholder="Explica en pocas palabras..." rows="3" id="sccdiv" required></textarea>
         </div>
 
-        <!-- Pregunta 10 -->
+        <!-- Pregunta 9 -->
         <div class="contenido">
             <label>¿Qué atributo de la etiqueta &lt;a&gt; permite abrir un enlace en una nueva pestaña? *</label>
             <div class="rad_padre">
@@ -129,8 +123,7 @@
         </div>
 
         <div style="display: flex; justify-content: right;">
-            <!--<a href="#" class="obj boton">← Anterior</a>-->
-            <button type="submit" class="obj boton principal" style="width: 100%;">Siguiente →</button> 
+            <button type="submit" class="obj boton principal" style="width: 100%;" formaction="seccion2.html">Siguiente →</button> 
         </div>
 
         <p style="text-align: center;">Examen hecho por Nancuante, Medina y Calbucura de 4º I - Inf.</p> 
