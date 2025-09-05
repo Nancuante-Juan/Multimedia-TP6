@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <form>
+        <h1>Examen sobre el diseño web</h1>
+        <h2>Sección 1</h2>
+        <i>Las preguntas que poseen * son obligatorias.</i>
+    
+        <!-- Pregunta 1 -->
+        <div class="contenido">
+            <label for="name">Ingrese su nombre *</label>
+            <input placeholder="Tu nombre" id="name" type="text" required>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="contenido">
+            <label for="estructura">¿Cómo se crea la estructura básica de un documento HTML? *</label>
+            <textarea id="estructura" name="estructura" placeholder="Escribe tu respuesta..." rows="4" required></textarea>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="contenido">
+            <label>¿Qué hace la etiqueta &lt;h1&gt;? *</label>
+            <div class="rad_padre">
+                <div class="rad_cont">
+                    <input type="radio" id="h1_1" name="h1" value="titulo" required>
+                    <label for="h1_1">Crea un título principal</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="h1_2" name="h1" value="imagen">
+                    <label for="h1_2">Da estilo a la pagina</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="h1_3" name="h1" value="tabla">
+                    <label for="h1_3">Crea una tabla</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="contenido">
+            <label for="atajoNuevo">¿Cuál de las siguientes etiquetas se utiliza para crear un enlace en HTML?*</label>
+            <select id="atajoNuevo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="ctrlN">img</option>
+                <option value="ctrlS">p</option>
+                <option value="ctrlC">a</option>
+                <option value="ctrlX">link</option>
+            </select>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="contenido">
+            <label for="atajoGuardar">¿Qué etiqueta se usa para crear un párrafo? *</label>
+            <select id="atajoGuardar" required>
+                <option value="">Seleccione una opción</option>
+                <option value="ctrlS">P</option>
+                <option value="ctrlN">span</option>
+                <option value="ctrlC">h1></option>
+            </select>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="contenido">
+            <label for="vscode">¿Qué es Visual Studio Code? *</label>
+            <textarea id="vscode" placeholder="Escribe tu respuesta..." rows="3" required></textarea>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="contenido">
+            <label>¿Qué significa CSS?</label>
+            <div class="rad_padre">
+                <div class="rad_cont">
+                    <input type="radio" id="tag1" name="tag" value="s" required>
+                    <label for="tag1">&lt;Creative Style Sheets&gt;</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="tag2" name="tag" value="mark">
+                    <label for="tag2">&lt;Cascading Style Sheets&gt;</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="tag3" name="tag" value="h1">
+                    <label for="tag3">&lt;Colorful Style Sheets&gt;</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="contenido">
+            <label for="img">¿Cuál de los siguientes NO es un lenguaje de desarrollo web?*</label>
+            <select id="img" required>
+                <option value="">Seleccione una opción</option>
+                <option value="src">JavaScript</option>
+                <option value="alt">Excel</option>
+                <option value="href">CSS</option>
+            </select>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="contenido">
+            <label>¿Qué significa HTML?</label>
+            <textarea placeholder="Explica en pocas palabras..." rows="3" required></textarea>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="contenido">
+            <label>¿Qué atributo de la etiqueta &lt;a&gt; permite abrir un enlace en una nueva pestaña? *</label>
+            <div class="rad_padre">
+                <div class="rad_cont">
+                    <input type="radio" id="a1" name="a_blank" value="href" required>
+                    <label for="a1">href</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="a2" name="a_blank" value="target">
+                    <label for="a2">target="_blank"</label>
+                </div>
+                <div class="rad_cont">
+                    <input type="radio" id="a3" name="a_blank" value="rel">
+                    <label for="a3">rel</label>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: right;">
+            <!--<a href="#" class="obj boton">← Anterior</a>-->
+            <button type="submit" class="obj boton principal" style="width: 100%;">Siguiente →</button> 
+        </div>
+
+        <p style="text-align: center;">Examen hecho por Nancuante, Medina y Calbucura de 4º I - Inf.</p> 
+    </form>
+</body>
+</html>
